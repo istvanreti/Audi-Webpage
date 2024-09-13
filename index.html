@@ -1,0 +1,410 @@
+﻿<!DOCTYPE html>
+<html>
+<title>Audi Németország</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" type="image/png" href="weboldal_logo.png">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
+
+/* Parallax effekt */
+.bgimg-1, .bgimg-2, .bgimg-3 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Első kép (Logó. Teljes magasság) */
+.bgimg-1 {
+    background-image: url('audi_logo.jpg');
+    min-height: 100%;
+}
+
+/* Második kép (Portfolió) */
+.bgimg-2 {
+    background-image: url("audi_logoo.jpg");
+    min-height: 400px;
+}
+
+/* Harmadik kép (Kapcsolat) */
+.bgimg-3 {
+    background-image: url("audi209.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Parallax görgetés kikapcsolása telefonoknál és tableteknél */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
+<body>
+
+<!-- Menüsor (felül marad) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">KEZDŐLAP</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-car"></i> AZ AUDI TÖRTÉNETÉRŐL</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> KÉPEK</a>
+    <a href="#contact" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-envelope"></i> KAPCSOLAT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      
+    </a>
+  </div>
+
+  <!-- Menüsor kis képernyőkön -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">Az Audi történetéről</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">Képek</a>
+    <a href="#contact" class="w3-bar-item w3-button" onclick="toggleFunction()">Kapcsolat</a>
+  </div>
+</div>
+
+<!-- Első parallax kép Logó és szöveg -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Audi, <span class="w3-hide-small">A haladás</span> technikája</span>
+  </div>
+</div>
+
+<!-- Konténer (Kapcsolat rész) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">Az Audi történetéről</h3>
+  <p class="w3-center"><em></em></p>
+  <p>Az Audi története az egyik legsokszínűbb az autóipar történelmében. Négy márka, az Audi, a DKW, a Horch és a Wanderer összeolvadásából jött létre 1932-ben, hogy megalapítsa az 
+  Auto Union AG márkát, amelynek emblémájául a négy karikát választották. Ez a négy karika a négy márkát szimbolizálja, bár a DKW autógyárnak is ugyanez volt a márkajelzése, így ez 
+  nagyban megkönnyítette a cég munkáját az emblémaválasztásban. Az Audi AG az Audi NSU Auto Union AG-ből alakult 1985-ben. Az Auto Union GmbH és az NSU GmbH tradicionális márkákkal 
+  együtt az Audi Tradition készíti és bemutatja az Audi tartalmas és szerteágazó történelmét. </p>
+  <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      
+      <img src="audi_logo1.jpg" class="w3-round w3-image w3-opacity w3-hover-opacity-off" alt="Photo of Me" width="500" height="333">
+    </div>
+
+    <!-- Takarja el ezt a leírást a kis képernyőkön -->
+    <div class="w3-col m6 w3-hide-small w3-padding-large">
+      <p>Ferdinand Porsche fejlesztette az Auto Union motorjait, így ő is nagy szerepet vállalt a márka sikerében. 1949 után Ingolstadt lett az Auto Union központja. 1958-ban a Mercedes-szel 
+	  kötött szövetség hat év után szétesett, mivel az Auto Union vezetősége továbbra is a kétütemű motorokat részesítette előnyben. Az Auto Union fő részvényese, Friedrich Flikk szoros 
+	  kapcsolatokat ápolt Heinrich Nordhoffal, a Volkswagen vezetőjével, aki 1965-ben átvette a négykarikás márkát.
+	  1969-től Audi NSU Auto Union névre változtatták a cég nevét az NSU beolvadása után, amit 1985-ben Audira egyszerűsítettek. A részben galvanizált Audi 80-as 1972-ben új távlatokat 
+	  nyitott az autógyártásban, és az Audi 200 5T 1980-as bevezetése sikeresen bevezette az Audi márkát a felső osztályba. Az Audi Quattro állandó összkerékhajtása megjelenésekor 
+	  világszenzáció volt, amit az Audi alkalmazott először sorozatgyártásban készülő autó esetében, és nem csak a rally világában.</p>
+    </div>
+  </div>
+  <p class="w3-large w3-center w3-padding-16">Audi pontozása kategória szerint:</p>
+  <p class="w3-wide"><i class="fa fa-car"></i>Kényelem</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:90%">90%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-car"></i>Sportosság</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:85%">85%</div>
+  </div>
+  <p class="w3-wide"><i class="fa fa-car"></i>Fogyasztás</p>
+  <div class="w3-light-grey">
+    <div class="w3-container w3-padding-small w3-dark-grey w3-center" style="width:80%">80%</div>
+  </div>
+</div>
+
+<div class="w3-row w3-center w3-dark-grey w3-padding-16">
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">13</span><br>
+    Modell
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">Ingolstadt</span><br>
+    Székhely
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">Rupert Stadler</span><br>
+    Vezető
+  </div>
+  <div class="w3-quarter w3-section">
+    <span class="w3-xlarge">Gépjárműipar</span><br>
+    Iparág
+  </div>
+</div>
+
+<!-- Második parallax kép portfolió szöveg  -->
+<div class="bgimg-2 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">KÉPEK</span>
+  </div>
+</div>
+
+<!-- Konténer (Portfolió rész) -->
+<div class="w3-content w3-container w3-padding-64" id="portfolio">
+  <h3 class="w3-center">AUDI MODELLJEIRŐL KÉPEK</h3>
+  <p class="w3-center"><em><br> Kattintson a képre a nagyobb méretért</em></p><br>
+
+  <!-- Responsive Grid. Four columns on tablets, laptops and desktops. Will stack on mobile devices/small screens (100% width) -->
+  <div class="w3-row-padding w3-center">
+    <div class="w3-col m3"> 
+      <img src="audi199.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi RS6 C7 Facelift V8 4.0 TFSI 605 Lóerő  ">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi RS6 C7 Facelift V8 4.0 TFSI 605 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi127.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi RS6 C7 Facelift V8 4.0 TFSI 605 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi125.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi RS6 C7 Facelift V8 4.0 TFSI 605 Lóerő">
+    </div>
+  </div>
+
+  <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="audi264.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi SQ7 2017 V8 4.0 T 435 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi165.png" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi SQ7 2017 V8 4.0 T 435 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi_q7_2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi Q7 2017 3.0 TDI 272 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi_q7.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi Q7 2017 3.0 TDI 272 Lóerő">
+    </div>
+	</div>
+	
+	
+	  
+  <div class="w3-row-padding w3-center w3-section ">
+    <div class="w3-col m3">
+      <img src="audi4-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi A4 Avant B8 Facelift 2.0 TDI 170 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi-a4-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi A4 Avant B8 Facelift 2.0 TDI 170 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi-a4-4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi RS4 Avant B8 Facelift V8 4.2 TFSI 450 Lóerő ">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi-a4-3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi A4 Avant B8 Facelift 2.0 TDI 170 Lóerő">
+    </div>
+ </div>
+ 
+ 
+ <div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="audi-a3-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi A3 2017 1.6 TDI 110 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi-a3-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi S3 2017 2.0 TFSI 300 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi-a3-3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi RS3 2017 2.5 TFSI 361 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi-a3-4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi A3 2017 1.6 TDI 110 Lóerő">
+    </div>
+ 	</div>
+	
+	
+	<div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="audi-a5-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi RS5 2017 V6 2.9 TFSI 450 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi-a5-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi RS5 2017 V6 2.9 TFSI 450 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi-a5-3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi RS5 2017 V6 2.9 TFSI 450 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi-a5-4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi RS5 2017 V6 2.9 TFSI 450 Lóerő">
+    </div>
+ </div>
+ 
+ 
+ 	<div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="audi-a7-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi RS7 2017 V8 4.2 TFSI 605 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi-a7-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi RS7 2016 V8 4.2 TFSI 605 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi-a7-3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi RS7 2016 V8 4.2 TFSI 690 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi-a7-4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi RS7 2016 V8 4.2 TFSI 605 Lóerő">
+    </div>
+ 	</div>
+	
+	
+	<div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="audi-a8-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi A8 2018 4.0T 450 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi-a8-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi A8 2018 4.0T 450 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi-a8-3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi A8 2018 4.0T 450 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi-a8-4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi A8 2018 4.0T 450 Lóerő">
+    </div>
+ 	</div>
+	
+	
+	<div class="w3-row-padding w3-center w3-section">
+    <div class="w3-col m3">
+      <img src="audi-r8-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi R8 2017 V10 5.2L 540 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi-r8-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi R8 2017 V10 5.2L 540 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi-r8-3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi R8 2017 V10 5.2L 540 Lóerő">
+    </div>
+
+    <div class="w3-col m3">
+      <img src="audi-r8-4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi R8 2017 V10 5.2L 540 Lóerő">
+    </div>
+ 	</div>
+	
+	<div class="w3-row-padding w3-center w3-section">
+    		<div class="w3-col m3">
+      <img src="audi-tt-1.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi TTRS 2017 2.5L 335 Lóerő">
+   	 	</div>
+
+    		<div class="w3-col m3">
+      <img src="audi-tt-2.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi TTRS 2017 2.5L 335 Lóerő">
+    		</div>
+
+    		<div class="w3-col m3">
+      <img src="audi-tt-3.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi TTRS 2017 2.5L 335 Lóerő">
+    		</div>
+
+   		 <div class="w3-col m3">
+      <img src="audi-tt-4.jpg" style="width:100%" onclick="onClick(this)" class="w3-hover-opacity" alt="Audi TTRS 2017 2.5L 335 Lóerő">
+    		</div>
+ 	</div>
+	</div>
+
+<!-- Kattintásra nagyítsa a képet-->
+<div id="modal01" class="w3-modal w3-black" onclick="this.style.display='none'">
+  <span class="w3-button w3-large w3-black w3-display-topright" title="Close Modal Image"><i class="fa fa-remove"></i></span>
+  <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+    <img id="img01" class="w3-image">
+    <p id="caption" class="w3-opacity w3-large"></p>
+  </div>
+</div>
+
+<!-- Harmadik parallax kép portfolió szöveg -->
+<div class="bgimg-3 w3-display-container w3-opacity-min">
+  <div class="w3-display-middle">
+     <span class="w3-xxlarge w3-text-white w3-wide">KAPCSOLAT</span>
+  </div>
+</div>
+
+<!-- Konténer (Kapcsolat rész) -->
+<div class="w3-content w3-container w3-padding-64" id="contact">
+  <h3 class="w3-center">CÍM</h3>
+  <p class="w3-center"><em>Szeretettel várunk minden Audi rajongót!</em></p>
+
+  <div class="w3-row w3-padding-32 w3-section">
+    <div class="w3-col m4 w3-container">
+      <!--Google Maps beillesztése -->
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1105.6452274662072!2d11.398240362383245!3d48.768862248391244!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x479efe65a27f1671%3A0x5cff4921d77587b6!2sAudi+Center+Ingolstadt!5e0!3m2!1sro!2sro!4v1524057132479" width="300" height="400" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div class="w3-col m8 w3-panel">
+      <div class="w3-large w3-margin-bottom">
+        <i class="fa fa-map-marker fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Ingolstadt,Németország<br>
+        <i class="fa fa-phone fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Phone: 0800 - 28 347 378 423<br>
+        <i class="fa fa-envelope fa-fw w3-hover-text-black w3-xlarge w3-margin-right"></i> Email: vorsprung_durch_technik@audi.de<br>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Láblec -->
+<footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Vissza a kezdőlapra</a>
+  <div class="w3-xlarge w3-section">
+    <i ><a href="https://www.facebook.com/AudiDE/" target="_blank" class="fa fa-facebook-official w3-hover-opacity"></a></i>
+    <i> <a href="https://www.instagram.com/audi_de/"target="_blank" class="fa fa-instagram w3-hover-opacity"></a></i>
+    <i> <a href="https://twitter.com/audide_" target="_blank" class="fa fa-twitter w3-hover-opacity"> </a></i>
+  </div>
+</footer>
+ 
+<script>
+
+// Képekre a nagyító effekt
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+
+// Változtassa a menüsort a görgetésnél
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
